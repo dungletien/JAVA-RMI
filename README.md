@@ -1,12 +1,25 @@
-# Xây dựng chương trình quản lí sinh viên sử dụng kĩ thuật phân tán RMI
+# Xây dựng chương trình quản lý sinh viên sử dụng kỹ thuật phân tán RMI
 
 ## Deployment
-B1: Kết nối database <br>
-B2: Biên dịch toàn bộ chương trình <br>
-    ``javac *.java
-<br>B3: Bắt đầu với registry<br>
-    ``start registry
-<br>B4: Chạy serve <br>
-    ``javac RMIServe.java
-<br>B5: Chạy Client<br>
-    ``javac RMIClient.java
+
+### Bước 1: Kết nối database  
+Đảm bảo database đã được thiết lập và có đầy đủ dữ liệu cần thiết.
+
+### Bước 2: Biên dịch toàn bộ chương trình  
+```sh
+javac *.java
+```
+
+### Bước 3: Bắt đầu với registry  
+```sh
+start rmiregistry
+```
+
+### Bước 4: Chạy Server  
+```sh
+java RMIServer
+```
+
+### Bước 5: Chạy Client  
+```sh
+java RMIClient
